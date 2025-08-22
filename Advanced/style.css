@@ -1,0 +1,243 @@
+/* header : #E43636 
+Body : #E2DDB4
+Titile: #932F67*/
+:root {
+    --bg-main: #e2ddb4;
+    --bg-header: #8c1007;
+    --todo-task: #932f67;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    color: white;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 29rem;
+    width: 25rem;
+    background-color: var(--bg-main);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 5rem;
+    background-color: var(--bg-header);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    width: 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.logo-name {
+    height: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0 1rem 0 1rem;
+    color: rgb(201, 194, 194);
+    text-decoration: underline;
+    flex: 1;
+}
+
+#date {
+    color: rgb(169, 169, 214);
+}
+
+.input-container {
+    height: 3rem;
+    display: flex;
+    margin-top: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+#search-input {
+    height: 100%;
+    flex: 1;
+    outline: none;
+    border: 1px solid transparent;
+    padding-left: 1rem;
+    background-color: rgb(175, 174, 174);
+}
+
+#search-input:focus,
+#search-input:hover {
+    border: 1px solid black;
+}
+
+#add-btn {
+    height: 100%;
+    width: 3rem;
+    border: none;
+    background-color: #8c1007;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background-color: #570f0a;
+}
+
+article {
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+.button-section {
+    display: flex;
+    height: 2rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-btn {
+    height: 1.7rem;
+    padding: 0 1rem;
+    border: none;
+    background-color: #e43636;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #b43333;
+}
+
+.filter-btn[data-filter="All"]:focus {
+    outline: none;
+    background-color: #b43333;
+}
+
+.filter-btn:focus {
+    scale: 1.1;
+    background-color: #b43333;
+}
+
+.todo-list {
+    border-top: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    overflow-y: auto;
+}
+
+.todo-list::-webkit-scrollbar {
+    display: none;
+}
+
+.count-clear {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+#count-item,
+#clear-list {
+    color: blue;
+}
+
+#clear-list {
+    cursor: pointer;
+}
+
+#clear-list:hover {
+    text-decoration: underline;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.list-items {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    background-color: var(--todo-task);
+    align-items: center;
+    justify-content: center;
+}
+
+.list-text {
+    flex: 1;
+    padding-left: 1rem;
+}
+
+.delete-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: #e43636;
+}
+
+.completed {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+#count {
+    color: blue;
+    padding: 0 0.5rem;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.empty-img {
+    padding: 1rem 0;
+    object-fit: cover;
+    height: 15rem;
+}
