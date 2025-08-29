@@ -12,7 +12,7 @@
 
 ## Live Link
 
-[ToDo Basic](https://aniket23padalkar.github.ToDo-App/Intermediate/)
+[ToDo Basic](https://aniket23padalkar.github.io/ToDo-App/Intermediate/)
 
 ## Description
 
