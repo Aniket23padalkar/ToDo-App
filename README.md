@@ -10,7 +10,7 @@ before arriving at the final clean version of the ToDo App:
 ## Live Links
 
 -   [ToDo Basic](https://aniket23padalkar.github.io/ToDo-App/Basic/)
--   [ToDo Intermediate](https://aniket23padalkar.github.ToDo-App/Intermediate/)
+-   [ToDo Intermediate](https://aniket23padalkar.github.io/ToDo-App/Intermediate/)
 -   [ToDo Advanced](https://aniket23padalkar.github.io/ToDo-App/Advanced/)
 
 # Description
